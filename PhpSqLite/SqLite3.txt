@@ -1,0 +1,44 @@
+
+
+::SQLite3($db);
+SQLite3::query 
+SQLite3Result::fetchArray
+
+http://php.net/manual/en/book.sqlite3.php
+
+
+    * SQLite3 — The SQLite3 class
+          o SQLite3::busyTimeout — Sets the busy connection handler
+          o SQLite3::changes — Returns the number of database rows that were changed (or inserted or deleted) by the most recent SQL statement
+          o SQLite3::close — Closes the database connection
+          o SQLite3::__construct — Instantiates an SQLite3 object and opens an SQLite 3 database
+          o SQLite3::createAggregate — Registers a PHP function for use as an SQL aggregate function
+          o SQLite3::createFunction — Registers a PHP function for use as an SQL scalar function
+          o SQLite3::escapeString — Returns a string that has been properly escaped
+          o SQLite3::exec — Executes a result-less query against a given database
+          o SQLite3::lastErrorCode — Returns the numeric result code of the most recent failed SQLite request
+          o SQLite3::lastErrorMsg — Returns English text describing the most recent failed SQLite request
+          o SQLite3::lastInsertRowID — Returns the row ID of the most recent INSERT into the database
+          o SQLite3::loadExtension — Attempts to load an SQLite extension library
+          o SQLite3::open — Opens an SQLite database
+          o SQLite3::prepare — Prepares an SQL statement for execution
+          o SQLite3::query — Executes an SQL query
+          o SQLite3::querySingle — Executes a query and returns a single result
+          o SQLite3::version — Returns the SQLite3 library version as a string constant and as a number
+          
+    * SQLite3Stmt — The SQLite3Stmt class
+          o SQLite3Stmt::bindParam — Binds a parameter to a statement variable
+          o SQLite3Stmt::bindValue — Binds the value of a parameter to a statement variable
+          o SQLite3Stmt::clear — Clears all current bound parameters
+          o SQLite3Stmt::close — Closes the prepared statement
+          o SQLite3Stmt::execute — Executes a prepared statement and returns a result set object
+          o SQLite3Stmt::paramCount — Returns the number of parameters within the prepared statement
+          o SQLite3Stmt::reset — Resets the prepared statement
+          
+    * SQLite3Result — The SQLite3Result class
+          o SQLite3Result::columnName — Returns the name of the nth column
+          o SQLite3Result::columnType — Returns the type of the nth column
+          o SQLite3Result::fetchArray — Fetches a result row as an associative or numerically indexed array or both
+          o SQLite3Result::finalize — Closes the result set
+          o SQLite3Result::numColumns — Returns the number of columns in the result set
+          o SQLite3Result::reset — Resets the result set back to the first row

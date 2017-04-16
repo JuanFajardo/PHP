@@ -1,0 +1,99 @@
+<?php
+/* ********************* */
+/* Conexion a PostgreSQL */
+/* ********************* */
+//Datos de coneccion
+$host="localhost";
+$user="postgres";
+$pass="postgres";
+$db="labbbase";
+$conexion = pg_connect("user=$user password=$pass dbname=$db host=$host");
+
+pg_query
+pg_num_rows
+pg_fetch_array
+http://www.php.net/manual/es/ref.pgsql.php
+Table of Contents
+    * pg_affected_rows — Returns number of affected records (tuples)
+    * pg_cancel_query — Cancel an asynchronous query
+    * pg_client_encoding — Gets the client encoding
+    * pg_close — Closes a PostgreSQL connection
+    * pg_connect — Open a PostgreSQL connection
+    * pg_connection_busy — Get connection is busy or not
+    * pg_connection_reset — Reset connection (reconnect)
+    * pg_connection_status — Get connection status
+    * pg_convert — Convert associative array values into suitable for SQL statement
+    * pg_copy_from — Insert records into a table from an array
+    * pg_copy_to — Copy a table to an array
+    * pg_dbname — Get the database name
+    * pg_delete — Deletes records
+    * pg_end_copy — Sync with PostgreSQL backend
+    * pg_escape_bytea — Escape a string for insertion into a bytea field
+    * pg_escape_string — Escape a string for insertion into a text field
+    * pg_execute — Sends a request to execute a prepared statement with given parameters, and waits for the result.
+    * pg_fetch_all_columns — Fetches all rows in a particular result column as an array
+    * pg_fetch_all — Fetches all rows from a result as an array
+    * pg_fetch_array — Fetch a row as an array
+    * pg_fetch_assoc — Fetch a row as an associative array
+    * pg_fetch_object — Fetch a row as an object
+    * pg_fetch_result — Returns values from a result resource
+    * pg_fetch_row — Get a row as an enumerated array
+    * pg_field_is_null — Test if a field is SQL NULL
+    * pg_field_name — Returns the name of a field
+    * pg_field_num — Returns the field number of the named field
+    * pg_field_prtlen — Returns the printed length
+    * pg_field_size — Returns the internal storage size of the named field
+    * pg_field_table — Returns the name or oid of the tables field
+    * pg_field_type_oid — Returns the type ID (OID) for the corresponding field number
+    * pg_field_type — Returns the type name for the corresponding field number
+    * pg_free_result — Free result memory
+    * pg_get_notify — Gets SQL NOTIFY message
+    * pg_get_pid — Gets the backend's process ID
+    * pg_get_result — Get asynchronous query result
+    * pg_host — Returns the host name associated with the connection
+    * pg_insert — Insert array into table
+    * pg_last_error — Get the last error message string of a connection
+    * pg_last_notice — Returns the last notice message from PostgreSQL server
+    * pg_last_oid — Returns the last row's OID
+    * pg_lo_close — Close a large object
+    * pg_lo_create — Create a large object
+    * pg_lo_export — Export a large object to file
+    * pg_lo_import — Import a large object from file
+    * pg_lo_open — Open a large object
+    * pg_lo_read_all — Reads an entire large object and send straight to browser
+    * pg_lo_read — Read a large object
+    * pg_lo_seek — Seeks position within a large object
+    * pg_lo_tell — Returns current seek position a of large object
+    * pg_lo_unlink — Delete a large object
+    * pg_lo_write — Write to a large object
+    * pg_meta_data — Get meta data for table
+    * pg_num_fields — Returns the number of fields in a result
+    * pg_num_rows — Returns the number of rows in a result
+    * pg_options — Get the options associated with the connection
+    * pg_parameter_status — Looks up a current parameter setting of the server.
+    * pg_pconnect — Open a persistent PostgreSQL connection
+    * pg_ping — Ping database connection
+    * pg_port — Return the port number associated with the connection
+    * pg_prepare — Submits a request to create a prepared statement with the given parameters, and waits for completion.
+    * pg_put_line — Send a NULL-terminated string to PostgreSQL backend
+    * pg_query_params — Submits a command to the server and waits for the result, with the ability to pass parameters separately from the SQL command text.
+    * pg_query — Execute a query
+    * pg_result_error_field — Returns an individual field of an error report.
+    * pg_result_error — Get error message associated with result
+    * pg_result_seek — Set internal row offset in result resource
+    * pg_result_status — Get status of query result
+    * pg_select — Select records
+    * pg_send_execute — Sends a request to execute a prepared statement with given parameters, without waiting for the result(s).
+    * pg_send_prepare — Sends a request to create a prepared statement with the given parameters, without waiting for completion.
+    * pg_send_query_params — Submits a command and separate parameters to the server without waiting for the result(s).
+    * pg_send_query — Sends asynchronous query
+    * pg_set_client_encoding — Set the client encoding
+    * pg_set_error_verbosity — Determines the verbosity of messages returned by pg_last_error and pg_result_error.
+    * pg_trace — Enable tracing a PostgreSQL connection
+    * pg_transaction_status — Returns the current in-transaction status of the server.
+    * pg_tty — Return the TTY name associated with the connection
+    * pg_unescape_bytea — Unescape binary for bytea type
+    * pg_untrace — Disable tracing of a PostgreSQL connection
+    * pg_update — Update table
+    * pg_version — Returns an array with client, protocol and server version (when available)
+?>

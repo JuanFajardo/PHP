@@ -1,0 +1,59 @@
+
+mysql_connect
+mysql_select_db
+mysql_query
+mysql_num_rows
+mysql_fetch_array
+http://php.net/manual/es/book.mysql.php
+
+
+# MySQL Funciones
+
+    * mysql_affected_rows — Obtiene el número de filas afectadas en la anterior operación de MySQL
+    * mysql_client_encoding — Devuelve el nombre de la colección de caracteres
+    * mysql_close — Cierra la conexión de MySQL
+    * mysql_connect — Abre una conexión al servidor MySQL
+    * mysql_create_db — Crea una base de datos MySQL
+    * mysql_data_seek — Mueve el apuntador interno del resultado
+    * mysql_db_name — Obtiene los datos del resultado
+    * mysql_db_query — Envía una consulta MySQL
+    * mysql_drop_db — Omite (elimina) una base de datos MySQL
+    * mysql_errno — Devuelve un mensaje de error con un valor numérico de la operación anterior con MySQL
+    * mysql_error — Devuelve el texto con error del mensaje de la anterior operación MySQL
+    * mysql_escape_string — Escapes a string for use in a mysql_query
+    * mysql_fetch_array — Fetch a result row as an associative array, a numeric array, or both
+    * mysql_fetch_assoc — Recupera una fila de resultado como un array asociativo
+    * mysql_fetch_field — Get column information from a result and return as an object
+    * mysql_fetch_lengths — Get the length of each output in a result
+    * mysql_fetch_object — Fetch a result row as an object
+    * mysql_fetch_row — Get a result row as an enumerated array
+    * mysql_field_flags — Get the flags associated with the specified field in a result
+    * mysql_field_len — Returns the length of the specified field
+    * mysql_field_name — Get the name of the specified field in a result
+    * mysql_field_seek — Set result pointer to a specified field offset
+    * mysql_field_table — Get name of the table the specified field is in
+    * mysql_field_type — Get the type of the specified field in a result
+    * mysql_free_result — Free result memory
+    * mysql_get_client_info — Obtener información del cliente MySQL
+    * mysql_get_host_info — Obtener información de la máquina anfitriona MySQL
+    * mysql_get_proto_info — Obtener información del protocolo MySQL
+    * mysql_get_server_info — Obtener información del servidor MySQL
+    * mysql_info — Obtiene información sobre la consulta más reciente
+    * mysql_insert_id — Get the ID generated in the last query
+    * mysql_list_dbs — List databases available on a MySQL server
+    * mysql_list_fields — List MySQL table fields
+    * mysql_list_processes — Lista los procesos MySQL
+    * mysql_list_tables — Lista las tablas de una base de datos MySQL
+    * mysql_num_fields — Get number of fields in result
+    * mysql_num_rows — Get number of rows in result
+    * mysql_pconnect — Open a persistent connection to a MySQL server
+    * mysql_ping — Efectuar un chequeo de respuesta (ping) sobre una conexión de servidor o reconectarse si no hay conexión
+    * mysql_query — Send a MySQL query
+    * mysql_real_escape_string — Escapes special characters in a string for use in an SQL statement
+    * mysql_result — Get result data
+    * mysql_select_db — Select a MySQL database
+    * mysql_set_charset — Sets the client character set
+    * mysql_stat — Obtiene el status actual del sistema
+    * mysql_tablename — Get table name of field
+    * mysql_thread_id — Devuelve el ID del hilo actual
+    * mysql_unbuffered_query — Envía una consulta SQL a MySQL, sin recuperar ni colocar en búfer las filas de resultado

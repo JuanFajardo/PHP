@@ -1,0 +1,145 @@
+oci_connect
+
+oci_execute
+oci_num_rows
+oci_fetch_array
+
+
+Oracle OCI8
+
+    * Introducción
+    * Instalación/Configuración
+          o Requerimientos
+          o Instalación
+          o Testing
+          o Configuración en tiempo de ejecución
+    * Constantes predefinidas
+    * Ejemplos
+    * Connection Handling
+    * Supported Datatypes
+    * OCI8 Funciones
+          o oci_bind_array_by_name — Binds a PHP array to an Oracle PL/SQL array parameter
+          o oci_bind_by_name — Binds a PHP variable to an Oracle placeholder
+          o oci_cancel — Cancels reading from cursor
+          o oci_close — Closes an Oracle connection
+          o OCI-Collection->append — Appends element to the collection
+          o OCI-Collection->assign — Assigns a value to the collection from another existing collection
+          o OCI-Collection->assignElem — Assigns a value to the element of the collection
+          o OCI-Collection->free — Frees the resources associated with the collection object
+          o OCI-Collection->getElem — Returns value of the element
+          o OCI-Collection->max — Returns the maximum number of elements in the collection
+          o OCI-Collection->size — Returns size of the collection
+          o OCI-Collection->trim — Trims elements from the end of the collection
+          o oci_commit — Commits the outstanding database transaction
+          o oci_connect — Connect to an Oracle database
+          o oci_define_by_name — Associates a PHP variable with a column for query fetches
+          o oci_error — Returns the last error found
+          o oci_execute — Executes a statement
+          o oci_fetch_all — Fetches multiple rows from a query into a two-dimensional array
+          o oci_fetch_array — Returns the next row from a query as an associative or numeric array
+          o oci_fetch_assoc — Returns the next row from a query as an associative array
+          o oci_fetch_object — Returns the next row from a query as an object
+          o oci_fetch_row — Returns the next row from a query as a numeric array
+          o oci_fetch — Fetches the next row from a query into internal buffers
+          o oci_field_is_null — Checks if the field is NULL
+          o oci_field_name — Returns the name of a field from the statement
+          o oci_field_precision — Tell the precision of a field
+          o oci_field_scale — Tell the scale of the field
+          o oci_field_size — Returns field's size
+          o oci_field_type_raw — Tell the raw Oracle data type of the field
+          o oci_field_type — Returns field's data type
+          o oci_free_statement — Frees all resources associated with statement or cursor
+          o oci_internal_debug — Enables or disables internal debug output
+          o OCI-Lob->append — Appends data from the large object to another large object
+          o OCI-Lob->close — Closes LOB descriptor
+          o oci_lob_copy — Copies large object
+          o OCI-Lob->eof — Tests for end-of-file on a large object's descriptor
+          o OCI-Lob->erase — Erases a specified portion of the internal LOB data
+          o OCI-Lob->export — Exports LOB's contents to a file
+          o OCI-Lob->flush — Flushes/writes buffer of the LOB to the server
+          o OCI-Lob->free — Frees resources associated with the LOB descriptor
+          o OCI-Lob->getBuffering — Returns current state of buffering for the large object
+          o OCI-Lob->import — Imports file data to the LOB
+          o oci_lob_is_equal — Compares two LOB/FILE locators for equality
+          o OCI-Lob->load — Returns large object's contents
+          o OCI-Lob->read — Reads part of the large object
+          o OCI-Lob->rewind — Moves the internal pointer to the beginning of the large object
+          o OCI-Lob->save — Saves data to the large object
+          o OCI-Lob->saveFile — Alias de oci_lob_import
+          o OCI-Lob->seek — Sets the internal pointer of the large object
+          o OCI-Lob->setBuffering — Changes current state of buffering for the large object
+          o OCI-Lob->size — Returns size of large object
+          o OCI-Lob->tell — Returns the current position of internal pointer of large object
+          o OCI-Lob->truncate — Truncates large object
+          o OCI-Lob->write — Writes data to the large object
+          o OCI-Lob->writeTemporary — Writes a temporary large object
+          o OCI-Lob->writeToFile — Alias de oci_lob_export
+          o oci_new_collection — Allocates new collection object
+          o oci_new_connect — Connect to the Oracle server using a unique connection
+          o oci_new_cursor — Allocates and returns a new cursor (statement handle)
+          o oci_new_descriptor — Initializes a new empty LOB or FILE descriptor
+          o oci_num_fields — Returns the number of result columns in a statement
+          o oci_num_rows — Returns number of rows affected during statement execution
+          o oci_parse — Prepares an Oracle statement for execution
+          o oci_password_change — Changes password of Oracle's user
+          o oci_pconnect — Connect to an Oracle database using a persistent connection
+          o oci_result — Returns field's value from the fetched row
+          o oci_rollback — Rolls back the outstanding database transaction
+          o oci_server_version — Returns server version
+          o oci_set_action — Sets the action name
+          o oci_set_client_identifier — Sets the client identifier
+          o oci_set_client_info — Sets the client information
+          o oci_set_edition — Sets the database edition
+          o oci_set_module_name — Sets the module name
+          o oci_set_prefetch — Sets number of rows to be prefetched by queries
+          o oci_statement_type — Returns the type of a statement
+    * OCI8 Obsolete Aliases and Functions
+          o ocibindbyname — Alias de oci_bind_by_name
+          o ocicancel — Alias de oci_cancel
+          o ocicloselob — Alias de
+          o ocicollappend — Alias de
+          o ocicollassign — Alias de
+          o ocicollassignelem — Alias de
+          o ocicollgetelem — Alias de
+          o ocicollmax — Alias de
+          o ocicollsize — Alias de
+          o ocicolltrim — Alias de
+          o ocicolumnisnull — Alias de oci_field_is_null
+          o ocicolumnname — Alias de oci_field_name
+          o ocicolumnprecision — Alias de oci_field_precision
+          o ocicolumnscale — Alias de oci_field_scale
+          o ocicolumnsize — Alias de oci_field_size
+          o ocicolumntype — Alias de oci_field_type
+          o ocicolumntyperaw — Alias de oci_field_type_raw
+          o ocicommit — Alias de oci_commit
+          o ocidefinebyname — Alias de oci_define_by_name
+          o ocierror — Alias de oci_error
+          o ociexecute — Alias de oci_execute
+          o ocifetch — Alias de oci_fetch
+          o ocifetchinto — Fetches the next row into an array (deprecated)
+          o ocifetchstatement — Alias de oci_fetch_all
+          o ocifreecollection — Alias de
+          o ocifreecursor — Alias de oci_free_statement
+          o ocifreedesc — Alias de
+          o ocifreestatement — Alias de oci_free_statement
+          o ociinternaldebug — Alias de oci_internal_debug
+          o ociloadlob — Alias de
+          o ocilogoff — Alias de oci_close
+          o ocilogon — Alias de oci_connect
+          o ocinewcollection — Alias de oci_new_collection
+          o ocinewcursor — Alias de oci_new_cursor
+          o ocinewdescriptor — Alias de oci_new_descriptor
+          o ocinlogon — Alias de oci_new_connect
+          o ocinumcols — Alias de oci_num_fields
+          o ociparse — Alias de oci_parse
+          o ociplogon — Alias de oci_pconnect
+          o ociresult — Alias de oci_result
+          o ocirollback — Alias de oci_rollback
+          o ocirowcount — Alias de oci_num_rows
+          o ocisavelob — Alias de
+          o ocisavelobfile — Alias de
+          o ociserverversion — Alias de oci_server_version
+          o ocisetprefetch — Alias de oci_set_prefetch
+          o ocistatementtype — Alias de oci_statement_type
+          o ociwritelobtofile — Alias de
+          o ociwritetemporarylob — Alias de
